@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Merriweather+Sans&family=Philosopher&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    list-style: none; 
+}
+
+.elemento{
+    background-image: url("./img/image-from-rawpixel-id-5928012-jpeg.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center; 
+    margin: 0%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-direction: row-reverse; 
+}
+
+.elemento::before {
+    content: "";
+    display: block;
+    padding-top: 40.25%; 
+}
+
+.elemento img {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.elemento2{
+    background-color: #2b2b2b;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; /* Agregado para apilar elementos verticalmente */
+}
+.miBoton { 
+    background-color: #ed82a9 ;
+    /* background-color: #fee4a0; */
+    padding: 12px 27px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color:#ffff;
+        font-size: 25px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        margin-bottom: 50px;
+}
+
+.miBoton:hover{
+    background-color: #ffa0c3;
+} 
+.h1{
+    font-size: 50px;
+    color: #fee4a0;
+    padding-bottom: 80px;
+    margin-top: px;
+}
+.h2{
+    margin-top: 30px;
+    font-size: 40px;
+    color: #fee4a0;
+    font-family: 'Philosopher', sans-serif;
+}
+.miBoton2{
+    font-size: 23px;
+    color: #e0dfdf;
+
+    padding-bottom: 80px;
+
+    border-radius: 50px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}

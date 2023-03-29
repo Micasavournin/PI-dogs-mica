@@ -1,8 +1,7 @@
 const { DataTypes} = require('sequelize');
-//I create the Dog model, which will have the attributes requested on the Readme.
 
 module.exports = (sequelize) => {
-  // defino el modelo
+  
   sequelize.define('Dog', {
     weightMax: {
       type: DataTypes.STRING,

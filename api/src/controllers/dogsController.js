@@ -17,7 +17,7 @@ const findDogs = async (name)=>{
 
 const getDogByID= async(id)=>{
     const allDogs= await getAllDogs()
-    let dog= undefined
+    let dog
     if(isNaN(id)){
         dog= allDogs.find(dog=>dog.id === (id))
     }else{
@@ -51,11 +51,28 @@ const createNewDog= async (weightMin,weightMax, height, name, life_span, image, 
     }
 };
 
+// const updateDog= async (id, name, life_span)=>{
+//     if (!id || !name || !life_span ){
+//         throw new Error("error: missing info")
+//     }
+//     try {
+//         const dogFind = await Dog.findByPk(id)
+//         if(dogFind) {
+//             dogFind.name = name;
+//             dogFind.life_span = life_span
+//             await dogFind.save()
+//         }
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+
 
 module.exports={
     getDogs,
     findDogs,
     getDogByID,
     createNewDog,
+    // updateDog
 
 }

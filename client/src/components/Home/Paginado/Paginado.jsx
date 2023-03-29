@@ -12,7 +12,7 @@ return (
             {
             pages && pages.map(num => (
                 <li className={styles['page-number']} key={num}>
-                    <a onClick={() => pagination(num)}>{num}</a>
+                    <a onClick={()=>pagination(num)}>{num}</a>
                 </li>
             ))
             }

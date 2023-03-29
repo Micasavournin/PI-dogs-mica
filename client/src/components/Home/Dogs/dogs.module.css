@@ -1,0 +1,25 @@
+.dogCards {
+    padding: 50px 15% 50px 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container{
+    display:  flex;
+    background-color: #2b2b2b;
+    justify-content: space-around;
+    height: 3rem;
+    align-items: center;
+}
+
+.filters select{
+    width: 110px;
+    margin-right: 10px;
+    color: white;
+    background-color: #2b2b2b;
+    border: 0;
+    border-bottom: 1px solid white;
+}
+

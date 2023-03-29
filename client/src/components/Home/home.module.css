@@ -1,0 +1,29 @@
+.div2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2b2b2b;
+    height: 3rem;
+    align-items: center;
+}
+
+.miBoton { 
+    background-color: #ed82a9 ;
+    /* background-color: #fee4a0; */
+    padding: 6px 15px 6px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color:#ffff;
+        font-size: 1rem;
+        font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+.miBoton:hover{
+    background-color: #ffa0c3;
+} 
+
+.div2 h1{
+    font-size: 1rem;
+    color: white
+}

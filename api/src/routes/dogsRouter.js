@@ -3,19 +3,6 @@ const {getDogs, findDogs, getDogByID, createNewDog}=require("../controllers/dogs
 
 const dogsRouter = Router()
 
-// dogsRouter.get("/", async (req, res)=>{
-//     const {name} = req.query
-//     let dogs
-//         if(name){
-//             dogs= await findDogs(name)
-//             if(dogs.error) return res.status(404).json(dogs)
-//             return res.status(200).json(dogs)
-//         }else{
-//             dogs= await getDogs()
-//             return res.status(200).json(dogs)
-//         }
-// })
-
 dogsRouter.get("/", async(req, res)=>{
     const{name}=req.query
     let dogs
@@ -56,5 +43,17 @@ dogsRouter.post("/", async (req, res)=> {
         res.status(400).json({error: error.message})
     }
 }) 
+
+// dogsRouter.put("/", async (req, res)=>{
+//     let { id, name, life_span}= req.body
+//     try {
+//         const updateDog= await updateDog(id, name, life_span)
+//         res.status(200).json(updateDog)
+//     } catch (error) {
+//         res.status(400).json({error:error.message})
+//     }
+// })
+
+
 
 module.exports= dogsRouter

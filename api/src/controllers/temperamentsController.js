@@ -8,8 +8,8 @@ const getAllTemperaments = async()=>{
     try {
     let everyTemperament = allData.data
     .map((dog) => (dog.temperament ? dog.temperament : "No info"))
-    .map((dog) => dog?.split(", "));
-    let eachTemperament = [...new Set(everyTemperament.flat())];
+    .map((dog) => dog?.split(", "))
+    let eachTemperament = [...new Set(everyTemperament.flat())];;
     eachTemperament.forEach((el) => {
     if (el) {
         Temperaments.findOrCreate({

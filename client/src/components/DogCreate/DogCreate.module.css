@@ -1,0 +1,304 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Be Vietnam Pro', sans-serif;;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #2b2b2b;
+    border-radius: 14px;
+    width: 50%;
+    height: 80%;
+    box-shadow: -1px 15px 30px -12px black;
+    
+}
+
+.title {
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+.title h3 {
+    background-color: #f88ea8;;
+    width: fit-content;
+    padding: 8px 25px 8px 25px;
+    color: #2b2b2b;
+    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 14px;
+    font-size: 1rem;
+}
+
+.title button{
+    background-color: #f88ea8;;
+    width: fit-content;
+    padding: 8px 25px 8px 25px;
+    color: #2b2b2b;
+    box-shadow: -1px 15px 30px -12px black;
+    border-radius: 14px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 
+        color 200ms linear,
+        transform 200ms linear
+}
+.title button:hover {
+    color: white;
+    transform: scale(1.03);
+}
+
+.bothSides {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.leftSide {
+    width: 45%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.rightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.name label {
+    margin-bottom: .5rem;
+    color: #f88ea8;;
+}
+.name input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.image label {
+    margin-bottom: .5rem;
+    color: #f88ea8;
+}
+.image input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.life {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.life label {
+    margin-bottom: .5rem;
+    color: #f88ea8;
+}
+.life input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.min {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.min label {
+    margin-bottom: .5rem;
+    color: #f88ea8;
+}
+.min input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 99%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.max {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.max label {
+    margin-bottom: .5rem;
+    color: #f88ea8;
+}
+.max input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 99%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.height {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+.height label {
+    margin-bottom: .5rem;
+    color:#f88ea8;
+}
+.height input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    color: #c8cac7;
+    width: 99%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.temperamentSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 5% 10px 5%;
+    width: 90%;
+}
+.temperamentSelect label {
+    margin-bottom: .5rem;
+    color: #f88ea8;
+}
+.temperamentSelect select {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    width: 100%;
+    outline: none;
+}
+
+strong {
+    font-size: 12px;
+    color: rgba(255, 0, 0, 0.603);
+    padding-top: 2px;
+    font-weight: 300;
+}
+
+.temperamentsChosen {
+    display: flex;
+    margin: 0 5% 2.3rem 5%;
+    padding: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 7rem;
+}
+
+.eachTemperament {
+    background-color: #f88ea9bd;
+    display: flex;
+    height: fit-content;
+    height: 2.3rem;
+    padding-left: 8px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: -1px 15px 30px -12px black;
+}
+.eachTemperament p {
+    font-size: 14px;
+    padding-bottom: 0;
+    padding-right: 8px;
+}
+.eachTemperament button {
+    background-color: #f96057;
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: 
+        background-color 200ms linear;
+}
+.eachTemperament button:hover {
+    background-color: #b82a22;
+    cursor: pointer;
+}
+
+.addButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    width: fit-content;
+    color: #2b2b2b;
+    background-color: #f88ea8;;
+    font-size: 1.2rem;
+    padding: 5px 20px 5px 20px;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: 
+        color 200ms linear,
+        transform 200ms linear
+}
+
+.addButton:hover {
+    color: white;
+    transform: scale(1.03);
+}
